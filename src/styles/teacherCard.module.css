@@ -1,0 +1,161 @@
+.sectionTeacherCard{
+    width: fit-content;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.cardFlexWrap{
+    display: flex;
+}
+
+.nickname{
+    margin-top: 0;
+    margin-bottom:0;
+    margin-right: 4px;
+    text-overflow: ellipsis;
+    line-height: 0.5;
+    color: #515164;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.job{
+    margin-bottom: 8px;
+    color: #9c9cac;
+    line-height: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.teach_language{
+    text-transform: uppercase;  
+    color: #9c9cac;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.languageFlexWrap{
+    display:flex;
+}
+
+.speakLanguage{
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size:16px;
+    line-height: 24px;
+    color: #313140;
+    font-weight: 700;
+}
+
+.shortSignature{
+    color: #515164;
+    font-weight: 700;
+}
+
+.aboutMe{
+    margin-top: 0;
+    margin-bottom: 15px;
+    max-width: 604px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.trialLessons{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.currency,.price{
+    color: #313140;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+
+.trial{
+    color: #9c9cac;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.buttonTrialWrap{
+    display: flex;
+    justify-content: space-around;
+    height: 32px;
+    width: 150px;
+}
+
+.bookTrial{
+    color: #515164;
+    background-color: #f5f6f9;
+    border-color: #f5f6f9;
+    height: 32px;
+    padding: 6px 16px;
+    border-radius: 16px;
+    min-width: 80px;
+    font-size: 14px;
+    font-weight: 700;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .75px;
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.profileWrap{
+    display:flex;
+    justify-content: space-around;
+}
+
+.profileLink{
+    padding: 8px 20px;
+    border-top: 2px solid #f5f6f9;
+    border-bottom: 2px solid #515164;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .75px;
+    color: #515164;
+    background-color: #f0f0f0;
+}
+
+.profileLink:hover{
+    border-top: 2px solid #515164;
+    border-bottom: 2px solid #f5f6f9;
+}
+
+.profileButton{
+    outline: none;
+    padding: 8px 20px;
+    border-top: 2px solid #f5f6f9;
+    border-bottom: 1px solid #515164;
+    border-right: none;
+    border-left: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .75px;
+    color: #515164;
+    background-color: #f0f0f0;
+}
+
+.profileButton:hover{
+    border-top: 2px solid #515164;
+    border-bottom: 2px solid #f5f6f9;
+}
+
+

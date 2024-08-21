@@ -1,0 +1,30 @@
+
+
+.appMainWrap{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-left:auto;
+   margin-right:auto;
+    padding-top: 15px;
+    max-width: 1400px;
+   background-color: rgb(241, 242, 245)
+}
+
+.appCardWrap{
+   display: flex;
+   justify-content: space-between;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+ /* .overlay{
+   display: block;
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: #000000af;
+   z-index: 3;
+ } */

@@ -1,0 +1,13 @@
+.clearButton{
+    margin:0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px ;
+    padding-left: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffff;
+}
+.clearButton:hover{
+    background-color: #e5e5e5;
+}

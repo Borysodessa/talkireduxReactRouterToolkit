@@ -1,0 +1,134 @@
+.mainWrap{
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f6f9;
+}
+.teacherPageSection{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    max-width: 720px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.teacherWrap{
+    width:700px;
+    height: 500px;
+    background-color: aquamarine;
+}
+.avatarPhoto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-43%, -39%);
+    height: 140px;
+    object-fit: cover;
+}
+.frameWrap{ 
+    margin-right: 24px;
+    position: relative;
+    overflow: hidden;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+}
+.flagAvatar {
+    position: absolute;
+    right: 5px;
+    top: 54px;
+    display: inline-block;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px solid #E9E9EB;
+    border-width: 2px;
+    border-color: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+.profileWrap{
+    display:flex;
+    justify-self: start;
+}
+
+.nicknameTitle{
+    color: rgb(49, 49, 64);
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.language{
+    display: flex;
+    justify-content: center;  
+    gap: 5px;
+}
+
+.languageSpans{
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 500px;
+    color:rgb(156, 156, 172);
+    line-height: 22px;
+}
+
+.nativeLanguageSpan{
+   display: flex;  
+   justify-content: center;  
+   align-self: center;  
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+    color: #00b3bd;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    background-color: #E6F7F8;
+}
+.teachLanguage{
+    min-width: 56px;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #313140;
+}
+.levelLanguage{
+    width: 2px;
+    height: 8px;
+    background-color: rgba(13, 226, 152,1);
+}
+.levelSpans{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:27px;
+    align-self: center;
+}
+
+.teachesLanguages{
+    display: flex;
+    justify-content: flex; 
+    align-self: center;
+}
+
+.tiachLanguageWrap{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    line-height: 0.75;
+}
+
+.languageWrap{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
