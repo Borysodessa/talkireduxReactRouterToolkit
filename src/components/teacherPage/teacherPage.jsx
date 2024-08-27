@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 export function TeacherPage() {
-  const jsonData = useSelector((state) => state.json.data);
+  const jsonData = useSelector((state) => state.jsonData.data);
 
   let { teacherPageId } = useParams();
 

@@ -1,12 +1,12 @@
 import { useDispatch } from "react-redux";
-import { clearFilter } from "../../redux/action";
+import { setClearFilter } from "../../redux/reducers/filtersReducer";
 import styles from "../../styles/clearAll.module.css";
 
 export function ClearAll() {
   const dispatch = useDispatch();
 
   const clear = () => {
-    dispatch(clearFilter());
+    dispatch(setClearFilter());
   };
 
   return (

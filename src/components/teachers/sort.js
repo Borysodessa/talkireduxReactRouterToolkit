@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { changeParametr } from "../../redux/action";
+import { change } from "../../redux/reducers/sortReducer";
 import styles from "../../styles/sort.module.css";
 import classNames from "classnames";
 import { Arrow } from "./arrow";
@@ -15,11 +15,10 @@ export function Sort() {
   const changeCriteria = useSelector((state) => {
     return state.sorts.change;
   });
-
+  // console.log(changeCriteria);
   const dispatch = useDispatch();
 
-  const changeParamCriteria = (buttonName) =>
-    dispatch(changeParametr(buttonName));
+  const changeParamCriteria = (buttonName) => dispatch(change(buttonName));
 
   function changeParam(buttonName) {
     if (changeCriteria.selectButton !== buttonName) {

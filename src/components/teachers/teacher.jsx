@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
-import { choiceOfTeachers } from "../../redux/action";
+import { setSelectedTeacher } from "../../redux/reducers/filtersReducer";
+
 import styles from "../../styles/teacherCard.module.css";
 import { AllSpeakeLanguage } from "./language";
 import { Avatar } from "./avatar";
@@ -11,7 +12,7 @@ import { Link } from "react-router-dom";
 export function Teacher({ teacher, changeUserId }) {
   const dispatch = useDispatch();
 
-  const getSelectedTeacher = (evt) => dispatch(choiceOfTeachers(evt));
+  const getSelectedTeacher = (evt) => dispatch(setSelectedTeacher(evt));
 
   function changeAnyPriceFilter(e) {
     getSelectedTeacher(

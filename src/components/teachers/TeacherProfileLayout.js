@@ -5,7 +5,7 @@ import json from "./data.json";
 import { TeacherList } from "./teachersList";
 import { TeacherContent } from "./teacherContent";
 import { HeaderFilter } from "./headerFilter";
-console.log(json.data);
+
 export function TeacherProfileLayout() {
   const [searchParams, setSearchParams] = useSearchParams();
   const teacherId = searchParams.get("teacher_Id");

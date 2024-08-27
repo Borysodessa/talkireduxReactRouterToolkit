@@ -1,5 +1,5 @@
 import { Provider } from "react-redux";
-import { store } from "./redux/store";
+import { store } from "./redux/reducers/reducer";
 import { TeacherPage } from "./components/teacherPage/teacherPage";
 import { TeacherProfileLayout } from "./components/teachers/TeacherProfileLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

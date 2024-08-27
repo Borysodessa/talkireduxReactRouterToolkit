@@ -1,3 +1,5 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 const filtersInitialState = {
   selectedCountry: [],
   selectedLanguage: [],
@@ -6,44 +8,39 @@ const filtersInitialState = {
   maxPrice: 20,
 };
 
-export function filtersReducer(state = filtersInitialState, action) {
-  if (action.type === "SELECTEDCOUNTRY") {
-    return {
-      ...state,
-      selectedCountry: action.payload,
-    };
-  }
-  if (action.type === "SELECTEDLANGUAGE") {
-    return {
-      ...state,
-      selectedLanguage: action.payload,
-    };
-  }
-  if (action.type === "SELECTEDTEACHER") {
-    return {
-      ...state,
-      selectedTeacher: action.payload,
-    };
-  }
+export const filtersSlice = createSlice({
+  name: "filters",
+  initialState: filtersInitialState,
+  reducers: {
+    setSelectedCountry(state, action) {
+      state.selectedCountry = action.payload;
+    },
 
-  if (action.type === "CLEAR") {
-    return {
-      ...state,
-      selectedCountry: [],
-      selectedLanguage: [],
-    };
-  }
-  if (action.type === "MINVALUE") {
-    return {
-      ...state,
-      minPrice: action.payload,
-    };
-  }
-  if (action.type === "MAXVALUE") {
-    return {
-      ...state,
-      maxPrice: action.payload,
-    };
-  }
-  return state;
-}
+    setSelectedLanguage(state, action) {
+      state.selectedLanguage = action.payload;
+    },
+    setSelectedTeacher(state, action) {
+      state.selectedTeacher = action.payload;
+    },
+    setMinPrice(state, action) {
+      state.minPrice = action.payload;
+    },
+    setMaxPrice(state, action) {
+      state.maxPrice = action.payload;
+    },
+    setClearFilter() {
+      return filtersInitialState;
+    },
+  },
+});
+
+export const {
+  setClearFilter,
+  setSelectedCountry,
+  setSelectedLanguage,
+  setSelectedTeacher,
+  setMinPrice,
+  setMaxPrice,
+} = filtersSlice.actions;
+
+export const filtersReducer = filtersSlice.reducer;
